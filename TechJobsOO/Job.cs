@@ -15,7 +15,8 @@ namespace TechJobsOO
         // TODO: Add the two necessary constructors.
         public Job()
         {
-            Id = 100;
+            Id = nextId;
+            nextId++;
         }
 
         public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency)
